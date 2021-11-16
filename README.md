@@ -45,4 +45,4 @@ Open [http://localhost:3000](http://localhost:3000) in the browser you are using
 
 ## Demo
 
-You can see a demo of this website at [jarh-whatmovie.vercel.app](https://jarh-whatmovie.vercel.app)
+You can see a demo of this website at [https://whatflix.vercel.app](https://whatflix.vercel.app)
