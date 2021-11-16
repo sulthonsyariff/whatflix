@@ -6,6 +6,7 @@
   --scrollColor: rgb(37, 39, 54);
   --thumbColor: rgb(30, 29, 43);
   --scrollBarColor: rgb(37, 39, 54);
+  --boxShadowPrimary: rgba(229,9,20, 0.7);
 }
 
 * {
@@ -18,6 +19,19 @@ body {
   padding: 0;
   margin: 0;
   background: var(--bgColor) !important;
+}
+
+#nprogress .bar {
+  background: var(--primaryColor) !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px var(--primaryColor), 0 0 5px var(--primaryColor);
+}
+
+#nprogress .spinner-icon {
+  border-top-color: var(--primaryColor);
+  border-left-color: var(--primaryColor);
 }
 
 .light-mode {

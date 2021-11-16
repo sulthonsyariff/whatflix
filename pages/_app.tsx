@@ -4,7 +4,7 @@ import '../styles/navbar.scss';
 import '../styles/footer.css';
 import '../styles/discover.css';
 import '../styles/category.css';
-import '../styles/movies.css';
+import '../styles/movies.scss';
 import '../styles/trending.scss';
 import '../styles/detail_movie.css';
 import '../styles/movie_item.css';
