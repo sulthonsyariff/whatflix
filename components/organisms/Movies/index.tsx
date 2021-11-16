@@ -20,17 +20,25 @@ export default function Movies() {
   return (
     <div className="section-movies container-xxxl mt-0 mt-lg-5 mb-5">
       <div className="mb-5 d-flex justify-content-between align-items-center">
-        <div className="flex-2">
+        <div className="d-flex flex-column align-items-start gap-3">
           <h3 className="fw-bold">Movies</h3>
-          <select
-            className="form-select"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-          >
-            <option value="popular">Popular</option>
-            <option value="top_rated">Top Rated</option>
-            <option value="upcoming">Upcoming</option>
-          </select>
+          <div className="button-wrapper d-flex">
+            <button
+              type="button"
+              className={`btn btn-trending ${query === 'popular' ? 'btn-active' : ''}`}
+              onClick={() => setQuery('popular')}
+            >
+              Popular
+            </button>
+            <button
+              type="button"
+              className={`btn btn-trending ${query === 'upcoming' ? 'btn-active' : ''}`}
+              onClick={() => setQuery('upcoming')}
+            >
+              Upcoming
+            </button>
+          </div>
+
         </div>
         <div className="align-self-end">
           <Link href={`/movies/based?q=${query}&page=1`}>
