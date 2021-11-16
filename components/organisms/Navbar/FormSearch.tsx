@@ -34,7 +34,7 @@ export default function FormSearch() {
           value={keyword}
           onChange={(event) => setKeyword(event.target.value)}
         />
-        <span className="input-group-text" id="basic-addon-search">
+        <span className="input-group-text pointer" id="basic-addon-search">
           <i className="fa fa-search text-white" aria-hidden onClick={onClick} />
         </span>
       </div>

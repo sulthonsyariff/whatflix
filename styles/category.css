@@ -27,11 +27,11 @@
 }
 
 .section-category .button-wrapper .btn:focus {
-  box-shadow: 0 0 10px rgba(111, 87, 235, 0.7);
+  box-shadow: 0 0 10px var(--boxShadowPrimary);
 }
 
 .section-category .button-wrapper .btn-active {
-  background-color: rgb(105, 77, 248);
-  box-shadow: 0 0 10px rgba(111, 87, 235, 0.7);
+  background-color: var(--primaryColor);
+  box-shadow: 0 0 10px var(--boxShadowPrimary);
   color: rgb(255, 255, 255);
 }
