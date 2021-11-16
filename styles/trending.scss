@@ -1,0 +1,30 @@
+.section-trending {
+  .button-wrapper {
+    border: 1px solid var(--primaryColor);
+    border-radius: 40px;
+    padding: 5px;
+
+    .btn:focus {
+      box-shadow: 0 0 10px var(--primaryColor);
+    }
+  
+    .btn-trending {
+      display: block;
+      background-color: var(--secondaryColor);
+      color: var(--textColor);
+      border-radius: 40px;
+
+      &:first-child {
+        margin-right: 8px;
+      }
+    }
+  
+    .btn-active {
+      background-color: var(--primaryColor);
+      box-shadow: 0 0 10px var(--primaryColor);
+      color: rgb(255, 255, 255);
+      z-index: 9;
+    }  
+  }
+}
+

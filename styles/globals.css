@@ -1,0 +1,92 @@
+:root {
+  --primaryColor: #e50914;
+  --bgColor: #181818;
+  --textColor: rgb(255, 255, 255);
+  --secondaryColor: #202020;
+  --scrollColor: rgb(37, 39, 54);
+  --thumbColor: rgb(30, 29, 43);
+  --scrollBarColor: rgb(37, 39, 54);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--bgColor) !important;
+}
+
+.light-mode {
+  --primaryColor: #e50914;
+  --secondaryColor: rgb(248, 249, 250);
+  --bgColor: rgb(255, 255, 255);
+  --textColor: #000000;
+  --scrollColor: rgb(219, 219, 219);
+  --thumbColor: rgb(168, 168, 168);
+  --scrollBarColor: rgb(241, 241, 241);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--textColor);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container-xxxl {
+  max-width: 1440px;
+  padding: 0 5%;
+  margin: auto;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--scrollBarColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbColor);
+  border-radius: 40px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+}
+
+.view-all {
+  color: var(--textColor);
+}
+
+.pagination .page-link {
+  color: var(--primaryColor);
+}
+
+.pagination .active .page-link {
+  background-color: var(--primaryColor) !important;
+}
+
+.pagination .active .page-link:focus {
+  border-color: rgba(111, 87, 235, 0.7);
+  box-shadow: 0 0 0 3px rgba(111, 87, 235, 0.3);
+  outline: none;
+}
+
+.pagination-horizontal {
+  overflow: auto;
+}
+
+.pagination-horizontal::-webkit-scrollbar {
+  display: none;
+}
+
+.next-text-primary {
+  color: var(--primaryColor);
+}
