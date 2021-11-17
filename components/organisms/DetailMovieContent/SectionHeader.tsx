@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { DetailMovieTypes } from '../../../services/data_types';
 
 interface SectionHeaderProps {
@@ -17,7 +18,9 @@ export default function SectionHeader(props: SectionHeaderProps) {
 
   return (
     <div className="section-header d-flex flex-row">
-      <img src={`${rootImg}/w185/${movie.poster_path}`} alt={`poster ${movie.title}`} />
+      <div className="wrap-img">
+        <Image src={`${rootImg}/w185/${movie.poster_path}`} width={200} height={300} layout="responsive" alt={`poster ${movie.title}`} />
+      </div>
       <div className="section-title">
         <div>
           <h1 className="fw-bold">{movie.title}</h1>

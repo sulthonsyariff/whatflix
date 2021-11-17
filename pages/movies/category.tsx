@@ -1,11 +1,13 @@
 import { useRouter } from 'next/dist/client/router';
 import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
+import ScrollContainer from 'react-indiana-drag-scroll';
 import { getCategories, getCategoryMovies } from '../../services/data_api';
 import { CategoryTypes, DetailMovieTypes } from '../../services/data_types';
 import MovieItem from '../../components/molecules/MovieItem';
 import Footer from '../../components/organisms/Footer';
 import Navbar from '../../components/organisms/Navbar';
+import SEO from '../../components/atoms/SEO';
 
 interface CategoryProps {
   movies: DetailMovieTypes[];
@@ -35,11 +37,16 @@ export default function category(props: CategoryProps) {
 
   return (
     <>
+      <SEO
+        title={`Category | ${active}`}
+        description="Search information about your favorite movies"
+        image="/trailer.png"
+      />
       <Navbar />
       <div className="section-category container-xxxl my-5" style={{ minHeight: '100vh' }}>
         <div className="my-5">
           <h3 className="fw-bold">Browse by category</h3>
-          <div className="button-wrapper mb-4">
+          <ScrollContainer vertical className="button-wrapper mb-4">
             {categories.map((cat: CategoryTypes) => (
               <button
                 key={cat.id}
@@ -53,7 +60,7 @@ export default function category(props: CategoryProps) {
                 {cat.name}
               </button>
             ))}
-          </div>
+          </ScrollContainer>
         </div>
         <div className="grid-wrapper flex-row flex-wrap mb-5">
           <div className="row row-cols-auto">

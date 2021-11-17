@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ScrollContainer from 'react-indiana-drag-scroll';
 import { useCallback, useEffect, useState } from 'react';
 import { getCategories, getCategoryMovies } from '../../../services/data_api';
 import { CategoryTypes, DetailMovieTypes } from '../../../services/data_types';
@@ -37,7 +38,7 @@ export default function CategoryMovies() {
           <a className="view-all">View All</a>
         </Link>
       </div>
-      <div className="button-wrapper mb-4">
+      <ScrollContainer vertical className="scroll-container button-wrapper mb-4">
         {categories.map((category: CategoryTypes) => (
           <button
             key={category.id}
@@ -51,8 +52,8 @@ export default function CategoryMovies() {
             {category.name}
           </button>
         ))}
-      </div>
-      <div className="category-wrapper scroll-wrapper pb-5">
+      </ScrollContainer>
+      <ScrollContainer vertical className="category-wrapper scroll-wrapper pb-5 mb-4">
         {movies.map((movie: DetailMovieTypes) => (
           <MovieItem
             key={movie.id}
@@ -65,7 +66,7 @@ export default function CategoryMovies() {
             type="poster"
           />
         ))}
-      </div>
+      </ScrollContainer>
     </div>
   );
 }

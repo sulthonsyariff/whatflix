@@ -1,6 +1,7 @@
 import { useRouter } from 'next/dist/client/router';
 import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
+import SEO from '../../components/atoms/SEO';
 import MovieItem from '../../components/molecules/MovieItem';
 import Footer from '../../components/organisms/Footer';
 import Navbar from '../../components/organisms/Navbar';
@@ -32,19 +33,31 @@ export default function based(props: BasedProps) {
 
   return (
     <>
+      <SEO
+        title={`Movies | ${q}`}
+        description="Search information about your favorite movies"
+        image="/trailer.png"
+      />
       <Navbar />
       <div className="section-movies container-xxxl my-5" style={{ minHeight: '100vh' }}>
-        <div className="mb-5">
+        <div className="d-flex flex-column align-items-start gap-3 mb-5">
           <h3 className="fw-bold">Movies</h3>
-          <select
-            className="form-select"
-            value={query}
-            onChange={(event: any) => setQuery(event.target.value)}
-          >
-            <option value="popular">Popular</option>
-            <option value="top_rated">Top Rated</option>
-            <option value="upcoming">Upcoming</option>
-          </select>
+          <div className="button-wrapper d-flex">
+            <button
+              type="button"
+              className={`btn btn-trending ${query === 'popular' ? 'btn-active' : ''}`}
+              onClick={() => setQuery('popular')}
+            >
+              Popular
+            </button>
+            <button
+              type="button"
+              className={`btn btn-trending ${query === 'upcoming' ? 'btn-active' : ''}`}
+              onClick={() => setQuery('upcoming')}
+            >
+              Upcoming
+            </button>
+          </div>
         </div>
         <div className="grid-wrapper flex-row flex-wrap mb-5">
           <div className="row row-cols-auto">

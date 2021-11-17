@@ -23,13 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>WHATFLIX - Search Information About Your Favorite Film</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Search information about your favorite film" />
-        <meta name="og:title" content="WHATFLIX | Search Information About Your Favorite Film" />
-        {/* <meta name="og:url" content="https://jarh-whatmovie.vercel.app" /> */}
-        <meta name="og:image" content="/trailer.png" />
-        <meta name="og:description" content="Search Information About Your Favorite Film" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
         {/* <!-- Bootstrap CSS --> */}

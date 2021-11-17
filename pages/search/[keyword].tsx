@@ -1,3 +1,4 @@
+import SEO from '../../components/atoms/SEO';
 import Footer from '../../components/organisms/Footer';
 import Navbar from '../../components/organisms/Navbar';
 import ResultMovies from '../../components/organisms/ResultMovies';
@@ -12,6 +13,11 @@ interface SearchProps {
 export default function Search({ keyword, movies }: SearchProps) {
   return (
     <>
+      <SEO
+        title={`${keyword}`}
+        description="Search information about your favorite movies"
+        image="/trailer.png"
+      />
       <Navbar />
       <ResultMovies keyword={keyword} movies={movies} />
       <Footer />

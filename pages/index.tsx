@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import LoadingPage from '../components/atoms/LoadingPage.tsx';
+import SEO from '../components/atoms/SEO';
 import CategoryMovies from '../components/organisms/CategoryMovies';
 import DiscoverMovies from '../components/organisms/DiscoverMovies';
 import Footer from '../components/organisms/Footer';
@@ -17,6 +18,11 @@ export default function index() {
 
   return (
     <>
+      <SEO
+        title="Search Information About Your Favorite Movies"
+        description="Search information about your favorite movies"
+        image="/trailer.png"
+      />
       <div className="preloader">
         <LoadingPage />
       </div>

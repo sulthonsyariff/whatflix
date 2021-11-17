@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import ScrollContainer from 'react-indiana-drag-scroll';
 import Link from 'next/link';
 import { getTrendingMovies } from '../../../services/data_api';
 import { DetailMovieTypes } from '../../../services/data_types';
@@ -47,7 +48,7 @@ export default function TrendingMovies() {
           </Link>
         </div>
       </div>
-      <div className="trending-wrapper scroll-wrapper pb-5">
+      <ScrollContainer vertical className="trending-wrapper scroll-wrapper pb-5 mb-4">
         {movies.map((movie: DetailMovieTypes) => (
           <MovieItem
             key={movie.id}
@@ -60,7 +61,7 @@ export default function TrendingMovies() {
             type="poster"
           />
         ))}
-      </div>
+      </ScrollContainer>
     </div>
   );
 }

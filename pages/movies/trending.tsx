@@ -1,6 +1,7 @@
 import { useRouter } from 'next/dist/client/router';
 import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
+import SEO from '../../components/atoms/SEO';
 import MovieItem from '../../components/molecules/MovieItem';
 import Footer from '../../components/organisms/Footer';
 import Navbar from '../../components/organisms/Navbar';
@@ -32,9 +33,14 @@ export default function trending(props: TrendingProps) {
 
   return (
     <>
+      <SEO
+        title={`Trending Movies | ${query}`}
+        description="Search information about your favorite movies"
+        image="/trailer.png"
+      />
       <Navbar />
       <div className="section-trending container-xxxl my-5" style={{ minHeight: '100vh' }}>
-        <div className="d-flex flex-column flex-sm-row align-items-start gap-3 my-5">
+        <div className="d-flex flex-column align-items-start gap-3 my-5">
           <h3 className="fw-bold">Trending Movies</h3>
           <div className="button-wrapper d-flex">
             <button

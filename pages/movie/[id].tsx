@@ -1,3 +1,4 @@
+import SEO from '../../components/atoms/SEO';
 import SectionHeader from '../../components/organisms/DetailMovieContent/SectionHeader';
 import SectionInfo from '../../components/organisms/DetailMovieContent/SectionInfo';
 import SectionRecom from '../../components/organisms/DetailMovieContent/SectionRecom';
@@ -26,6 +27,12 @@ export default function DetailMovie(props: DetailMovieProps) {
 
   return (
     <>
+      <SEO
+        title={`${movie.title}`}
+        description={movie.overview}
+        image={`${rootImg}/w185/${movie.poster_path}`}
+      />
+
       <div className="d-none">
         <Navbar />
       </div>

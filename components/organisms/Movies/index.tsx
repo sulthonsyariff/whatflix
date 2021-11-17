@@ -38,7 +38,6 @@ export default function Movies() {
               Upcoming
             </button>
           </div>
-
         </div>
         <div className="align-self-end">
           <Link href={`/movies/based?q=${query}&page=1`}>
