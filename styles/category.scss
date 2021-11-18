@@ -1,0 +1,41 @@
+.section-category {
+  .button-wrapper {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      height: 13px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: var(--scrollColor);
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--secondaryColor);
+      color: var(--textColor);
+      border-radius: 40px;
+      margin-right: 15px;
+      transition: none;
+    }
+
+    .btn:focus {
+      box-shadow: 0 0 10px var(--boxShadowPrimary);
+    }
+    
+    .btn-active {
+      background-color: var(--primaryColor);
+      box-shadow: 0 0 10px var(--boxShadowPrimary);
+      color: rgb(255, 255, 255);
+    }    
+  }
+}
+
+

@@ -1,0 +1,21 @@
+.not-found {
+  min-height: 100vh;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  display: grid;
+  place-items: center;
+  padding: 0 10%;
+
+  .btn-outline-primary {
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+
+    &:hover {
+      color: rgb(255, 255, 255);
+      background-color: var(--primaryColor);
+      box-shadow: 0 0 10px rgba(111, 87, 235, 0.7);
+    }
+  }
+}
+
+

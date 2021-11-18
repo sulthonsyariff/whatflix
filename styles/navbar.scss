@@ -18,12 +18,12 @@
     }
   }
     
-  .btn-outline-purple {
+  .btn-outline-primary {
     border: 1px solid var(--primaryColor);
     color: var(--primaryColor);
   }
   
-  .btn-outline-purple:hover,
+  .btn-outline-primary:hover,
   .btn-mode:hover {
     color: rgb(255, 255, 255);
     background-color: var(--primaryColor);
