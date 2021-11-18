@@ -89,7 +89,7 @@ export default function Movies() {
           ))}
         </div>
       </div>
-      <div className="wrap-load-more">
+      <div className="wrap-load-more mt-4">
         <button
           type="button"
           className="btn btn-custom-primary"
