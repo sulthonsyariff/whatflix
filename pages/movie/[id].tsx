@@ -55,9 +55,9 @@ export default function DetailMovie(props: DetailMovieProps) {
 }
 
 interface GetStaticProps {
-    params: {
-        id: number;
-    }
+  params: {
+    id: number;
+  }
 }
 
 export async function getServerSideProps({ params }: GetStaticProps) {

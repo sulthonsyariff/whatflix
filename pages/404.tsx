@@ -18,7 +18,7 @@ export default function PageNotFound() {
         <Image src="/image/404-not-found.svg" width={500} height={250} />
         <h1 className="my-3">Page Not Found</h1>
         <Link href="/">
-          <a className="btn btn-outline-purple">
+          <a className="btn btn-outline-primary">
             Homepage
           </a>
         </Link>

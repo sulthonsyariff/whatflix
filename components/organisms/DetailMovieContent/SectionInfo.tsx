@@ -1,5 +1,7 @@
 import CurrencyFormat from 'react-currency-format';
+import ScrollContainer from 'react-indiana-drag-scroll';
 import { CreditsTypes, CrewCastTypes, DetailMovieTypes } from '../../../services/data_types';
+import { getLanguage } from '../../../services/utils';
 
 interface SectionInfoProps {
     movie: DetailMovieTypes;
@@ -40,7 +42,7 @@ export default function SectionInfo(props: SectionInfoProps) {
         </div>
         <div>
           <h5 className="fw-bold">Language</h5>
-          <p>{movie.original_language}</p>
+          <p>{getLanguage(movie.original_language)}</p>
         </div>
         <div>
           <h5 className="fw-bold">Popularity</h5>
@@ -62,7 +64,7 @@ export default function SectionInfo(props: SectionInfoProps) {
         </div>
         <div>
           <h5 className="fw-bold mb-3">Cast</h5>
-          <div className="cast-wrapper">
+          <ScrollContainer vertical className="cast-wrapper">
             {cast.map((person) => {
               if (person.profile_path !== null) {
                 return (
@@ -73,7 +75,7 @@ export default function SectionInfo(props: SectionInfoProps) {
                 );
               }
             })}
-          </div>
+          </ScrollContainer>
         </div>
       </div>
     </div>
