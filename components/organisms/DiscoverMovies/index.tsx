@@ -7,7 +7,7 @@ export default function DiscoverMovies() {
   return (
     <div className="section-discover container-xxxl mt-5 mb-7">
       <div className="mb-4">
-        <h2 className="fw-bold">Discover</h2>
+        <h2 className="fw-bold text-title">Discover</h2>
       </div>
       <ScrollContainer vertical className="scroll-container discover-wrapper scroll-wrapper pb-5">
         { discoverItem.map((item) => (

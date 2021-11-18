@@ -1,5 +1,5 @@
 .navbar {
-  background-color: var(--secondaryColor);
+  background-color: var(--bgColor);
   box-shadow: 0 1px 5px rgb(0 0 0 / 40%);
   // border-bottom: 2px solid #000;
 
@@ -34,11 +34,6 @@
     color: var(--primaryColor);
   }
   
-  input[type='search'] {
-    background-color: var(--secondaryColor);
-    color: white;
-  }
-  
   .btn-mode {
     width: 30px;
     height: 30px;
@@ -55,15 +50,17 @@
   }
 
   .search-input {
-    border-color: var(--primaryColor);
-    
+    border-color: var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    color: white;
+
     &:focus {
       box-shadow: none;
     }
   }
 
   .input-group-text {
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
     border: none;
     cursor: pointer;
   }

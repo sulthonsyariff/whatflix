@@ -104,3 +104,8 @@ a {
 .next-text-primary {
   color: var(--primaryColor);
 }
+
+.text-title {
+  border-left: 2px solid var(--primaryColor);
+  padding-left: 12px;
+}

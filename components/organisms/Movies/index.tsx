@@ -21,7 +21,7 @@ export default function Movies() {
     <div className="section-movies container-xxxl mt-0 mt-lg-5 mb-5">
       <div className="mb-5 d-flex justify-content-between align-items-center">
         <div className="d-flex flex-column align-items-start gap-3">
-          <h3 className="fw-bold">Movies</h3>
+          <h3 className="fw-bold text-title">Movies</h3>
           <div className="button-wrapper d-flex">
             <button
               type="button"

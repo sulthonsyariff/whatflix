@@ -2,13 +2,12 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="container-xxxl d-flex justify-content-center pt-4 pb-2 text-center">
-        <p>
-          © 2021 WHATFLIX.
+        <p className="fs-6">
+          Copyright © 2021 by FH & SS.
           <br className="d-block d-sm-none" />
           {' '}
-          All rights reserved | SulthonSyariff by FH
+          All Rights Reserved
           {' '}
-          <i className="fa fa-heart" />
         </p>
       </div>
     </div>

@@ -42,8 +42,8 @@ export default function DiscoverItem(props: DiscoverItemProps) {
             <img src={`${rootImg}/w500/${data.backdrop_path}`} alt={`backdrop ${data.title}`} />
           </div>
           <div className="movie-info d-flex flex-row justify-content-between">
-            <div>
-              <h5 className="fw-bold">{data.title}</h5>
+            <div className="col-10">
+              <h5 className="fw-bold text-truncate">{data.title}</h5>
               <p className="my-1 my-md-2">{`${year} • ${categories}`}</p>
               <div className="d-flex align-items-center">
                 <span><i className="fa fa-star" aria-hidden /></span>

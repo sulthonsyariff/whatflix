@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app';
 import '../styles/globals.css';
 import '../styles/navbar.scss';
 import '../styles/footer.css';
-import '../styles/discover.css';
+import '../styles/discover.scss';
 import '../styles/category.css';
 import '../styles/movies.scss';
 import '../styles/trending.scss';

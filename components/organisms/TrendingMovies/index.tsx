@@ -22,7 +22,7 @@ export default function TrendingMovies() {
     <div className="section-trending container-xxxl mt-0 mt-lg-5">
       <div className="d-flex justify-content-between align-items-end align-items-end mb-5">
         <div className="d-flex flex-column align-items-start gap-3">
-          <h3 className="fw-bold">Trending Movies</h3>
+          <h3 className="fw-bold text-title">Trending Movies</h3>
           <div className="button-wrapper d-flex">
             <button
               type="button"

@@ -26,7 +26,7 @@ export default function FormSearch() {
     <form onSubmit={onSubmit}>
       <div className="input-group">
         <input
-          type="search"
+          type="text"
           className="form-control search-input"
           placeholder="Search movie..."
           aria-label="Search movie..."
