@@ -21,15 +21,7 @@ NEXT_PUBLIC_KEY="api_key=<your api_key>&language=en-US"
 
 ## Development
 
-If you want to try to do the development process, make sure your device has installed [nodejs](https://nodejs.org/en/).
-
-You can download this repository by clicking `Code` at the top, then selecting `Download ZIP` or if you want to clone this repository you can do this by
-
-```bash
-git clone https://github.com/fajarhidayatt/whatmovie.git
-```
-
-After that, install all the packages / dependencies contained in this project
+Install all the packages / dependencies contained in this project
 
 ```bash
 npm install
