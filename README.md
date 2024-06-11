@@ -15,8 +15,11 @@ This website was built using several technologies in it, including:
 This website uses the API of [themoviedb.org](https://www.themoviedb.org/documentation/api), and of course requires `api-key` so that the API on this website can run. You can register first at [themoviedb.org](https://www.themoviedb.org/documentation/api) to get `api-key`. After getting the api key, you can enter the `api-key` in the `env` file.
 
 ```env
-NEXT_PUBLIC_KEY="api_key=<your api_key>&language=en-US"
-# <your api_key> replaced with your own api-key
+# <api_key> replaced with your own api-key
+NEXT_PUBLIC_KEY="api_key=<api_key>&language=en-US"
+
+NEXT_PUBLIC_IMG="https://image.tmdb.org/t/p"
+NEXT_PUBLIC_API="https://api.themoviedb.org/3"
 ```
 
 ## Development
